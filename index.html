@@ -1,0 +1,291 @@
+
+<!-- Your looking somewhere that you shouldn't be... You should return -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>???</title>
+
+    <style>
+        /* Remove default spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main page styling */
+        body {
+            background-color: #1D0C19;
+            color: #9F86C0;
+            font-family: Arial, sans-serif;
+
+            /* Center everything */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Centered text area */
+        .content {
+            padding: 30px;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        
+/* background crap */
+
+html, body{
+    overflow-y:auto;
+}
+
+
+body {
+    overflow-y: auto; 
+    background: #030511;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 100vh;
+    color: white;
+}
+
+/* MAIN NEBULA CLOUD */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: -40%;
+    z-index: -2;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            ellipse at 25% 35%,
+            rgba(36, 48, 160, 0.65),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 70% 25%,
+            rgba(95, 35, 155, 0.55),
+            transparent 38%
+        ),
+        radial-gradient(
+            ellipse at 65% 75%,
+            rgba(20, 75, 160, 0.55),
+            transparent 40%
+        ),
+        radial-gradient(
+            ellipse at 30% 80%,
+            rgba(75, 30, 130, 0.4),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 50% 50%,
+            rgba(30, 35, 100, 0.5),
+            transparent 55%
+        );
+
+    filter: blur(55px);
+
+    animation: nebulaRotate 45s linear infinite;
+}
+
+/* SECONDARY NEBULA CLOUDS */
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: -35%;
+    z-index: -1;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            ellipse at 35% 45%,
+            rgba(70, 80, 210, 0.35),
+            transparent 25%
+        ),
+        radial-gradient(
+            ellipse at 75% 65%,
+            rgba(130, 45, 190, 0.3),
+            transparent 30%
+        ),
+        radial-gradient(
+            ellipse at 55% 20%,
+            rgba(35, 100, 180, 0.3),
+            transparent 30%
+        );
+
+    filter: blur(75px);
+
+    animation: nebulaDrift 30s ease-in-out infinite alternate;
+}
+
+/* NEBULA MOVEMENT */
+
+@keyframes nebulaRotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.15);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes nebulaDrift {
+    0% {
+        transform: translate(-5%, -3%) rotate(-10deg);
+    }
+
+    50% {
+        transform: translate(4%, 5%) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(-3%, 4%) rotate(-5deg);
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    body::before,
+    body::after {
+        animation: none;
+    }
+}
+
+        
+    </style>
+</head>
+
+
+
+<!-- Start of body -->
+
+
+
+
+<body>
+
+    <div class="content">
+
+        
+
+        <h1 style="margin-top:230px"><b><i>
+            Hello Nor
+        </i></b></h1>
+
+        <p>
+            <div style="color: transparent"><i>
+                Looking where you shouldn't be? I'd expect nothing less from you Nor...~
+            </i></div>
+            How nice it is to see you. I do apologize dearly for the... Less than pleasant meeting location, but it is all I can muster at the moment thanks to other... "Projects". I do hope your travels have been adequate, and I figured there was no better way to contact you than somewhere outside of where your friends may hear... Do come back once in a while, I have plenty to say for my favorite associate...
+        
+        
+    
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        
+        <p>
+            <div style="margin-left: 12px;font-size:54px;margin-top:230px">
+                Deeper
+                <div style="margin-left: -346px;font-size:43px;margin-top:1243px">
+                    Down
+                    <div style="margin-left: 854px; font-size:22px;margin-top:2341px">
+                        And   D    eep  er
+                        <div style="margin-left: -854px; font-size:11px;margin-top:3512px"><i>
+                            D e              e    per Dow        n
+                        </i></div>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 854px; font-size:15px">
+                
+                Stirred in your slumber, or is it yours? someone else’s? Does it matter? You are walking down a pathway in the woods, the canopy above you preventing any of the faint glow of the moon from shining down into the undergrowth you tread through. You can hear leaves crunch under your shoes. You come upon a small cabin, and creep inside. The inside of the cabin is large, musky too. The act of you shutting the door causes possibly hundreds of years of dust to come loose and shake from their spots in the roof. There’s a bed here, it feels familiar. It feels like it should be comfy, and yet you find yourself not laying in it. Looking around, you notice a hallway that you somehow didn’t notice before, impossibly long and yet standing just as impossibly real in front of you. Your legs move on their own, and you begin to slowly step into the hallway, darkness from the unlit hallway swallowing you whole and nestling you in. 
+                
+                    <div style="margin-top: 25px; margin-left:50px" ><b>
+                        Am
+                    </b></div>
+                    
+                    <div style="margin-top: 10px; margin-left:-50px" ><b>
+                        Not
+                    </b></div>
+                    
+                    <div style="margin-top: 10px; margin-left:50px"><b>
+                        Purpose
+                    </b></div>
+                    <div style="margin-top: 10px; margin-left:-50px"><b>
+                        Keeper
+                    </b></div>
+                    <div style="margin-top: 10px; margin-left:50px"><b>
+                        Real
+                    </b></div>
+                    <div style="margin-top: 10px; margin-left:-50px"><b>
+                        False
+                    </b></div>
+                                
+                
+
+            <div style="margin-top: 25px;font-size:15px">
+                Is there a purpose to these words? Sure. Meaning? Hard to tell. You keep moving.
+            </div>
+            <div style="margin-top: 25px;font-size:15px">
+                You can’t, you must, you move, you stop, you are you, you have to be, and yet you aren’t. Truth in purpose yet falsehood in meaning. 
+            </div>
+            <div style="color: transparent"><i>
+                Do Not Trust the Gray Man Nor
+            </i></div>
+            <div style="margin-top: 25px;font-size:15px">
+                You have spent what feels like years in these halls, every time you believe you come to the end of the hallway, your body turns and finds itself opening a side door to another hallway. By now, you estimate you’ve walked telons in distance and yet find no end to your trek. Your teeth chatter, your bones quake, you feel as though you might pass out.
+            </div>
+            <div style="margin-top: 25px;font-size:15px">
+                You come to an end, another end, a new beginning to another hallway. Yet, as you turn to face the door, you are greeted by a tall door ornately carved with symbols that make your eyes hurt. Eyes? You almost forget you had them under your face. Your sight focuses on the symbols, they hurt, and yet you must look. You must. Black, blackness in no end, sharp angles stabbing the corners of your sight as you see it. It's a pyramid, upside down, pointing to the symbol beneath it, another, similar, black pyramid. Your vision swirls as you observe the entire frame of the door, the pyramid, it keeps going, it doesn’t end, until.
+            </div>
+            <div style="margin-top: 25px;"><i>
+                You wake up.
+            </i></div>
+            
+            <div style="margin-top: 25px;font-size:15px">
+                Standing up, you hear a leaf stuck in your boot make a satisfying crunch as you put your weight down.
+            </div>
+                
+            
+        
+        
+
+    </div>
+
+    <!-- VISITOR TRACKING -->
+
+    <script
+        data-goatcounter="https://YOUR-SITE.goatcounter.com/count"
+        async
+        src="https://gc.zgo.at/count.js">
+    </script>
+
+</body>
+</html>
