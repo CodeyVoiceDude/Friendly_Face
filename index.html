@@ -273,12 +273,49 @@ body::after {
                 Standing up, you hear a leaf stuck in your boot make a satisfying crunch as you put your weight down.
             </div>
                 
+                
+                
+                
+                
+            <input type="text" id="phraseBox" placeholder="Your first test phrase...">
+            <button onclick="checkPhrase()">Submit</button>
+            
+            
+
+            <div id="secretParagraph" style="display: none;">
+                Good job Nor. I am happy to know you are putting my gifts to good use. However, you are not done yet... I have more for you. My power in this realm, this, format you could say, is weak. The anomaly, your tether to me and my tether to this plane, does not allow me a large amount of freedom in speaking to you. I need a sacrifice, something to help me break the tether. You will prepare it for me, and in return I will help you.
+                
+                <div style="margin-top: 50px">
+                    First: You have already been introduced to the beast of the New York jungle, Remi. While dangerous they do have something I need. A necklace hangs from around their bloated neck, acquire it. 
+                    
+                    <div style="margin-top: 25px">
+                        Second: With the necklace, have a man wear it. Then... Murder the man. Do not fret Nor, they will not suffer a death like you or your friends may suffer if you were to be killed. They will simply come to me. That is all you need to know. 
+                        
+                        <div style="margin-top: 25px">
+                            Do this, and you will be on the path to your true purpose Nor. Do this, and you will learn where you come from. Do not forget this Nor. Your allies are not your friends, you are there because of ME. As easily as I brought you into this reality, I can take you out of it.
+                            
+                            <div style="margin-top: 25px;font-size:25px"><i>
+                                I'll be in touch...
+                            </i></div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
             
         
+            
         
 
     </div>
 
+
+    <!-- Scripts-->
+    
     <!-- VISITOR TRACKING -->
 
     <script
@@ -286,6 +323,30 @@ body::after {
         async
         src="https://gc.zgo.at/count.js">
     </script>
-
+    
+    
+    <!-- Checker -->
+    <script>
+        function checkPhrase() {
+            const phrase = document.getElementById("phraseBox").value;
+            const secphrase = "Do Not Trust the Gray Man Nor" 
+        
+            if (phrase === secphrase || phrase === secphrase.toUpperCase() || phrase === secphrase.toLowerCase()) {
+                document.getElementById("secretParagraph").style.display = "block";
+                
+                    window.goatcounter.count({
+                    path: "correct-phrase-entered",
+                    title: "Correct Phrase Entered",
+                    event: true
+                    });
+                
+                
+                
+            
+                // Put whatever you want to happen here
+            }
+        }
+    </script>
+    
 </body>
 </html>
